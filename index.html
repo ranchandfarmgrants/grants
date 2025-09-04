@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Ranch & Farm Grants – Free Guide</title>
+  <meta name="description" content="The largest free farm & ranch grant guide in plain English. 48+ USDA, state, and local programs with searchable filters, payout type, timelines, and tips.">
+  <meta name="keywords" content="farm grants, ranch grants, USDA grants, EQIP, ECP, LFP, LIP, TAP, REAP, VAPG, USDA cost-share, fencing grants, agriculture funding, farmer loans, disaster programs">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Ranch & Farm Grants</h1>
+      <p class="sub">🌾 Free, plain-English guide to 48+ farm & ranch programs — searchable and filterable. <span id="lastUpdated">Last updated: 2025-08-28</span></p>
+
+      <div class="sharebar">
+        <a id="globalShareBtnTop" class="button outline small" href="#">Share this guide</a>
+        <a id="globalCopyBtnTop"  class="button ghost small"  href="#">Copy link</a>
+      </div>
+
+      <h2>Eligibility basics (read first)</h2>
+      <ul class="notice-list">
+        <li><strong>FSA (Farm Service Agency) – Form 578 (Acreage Report)</strong> must be current for acres you’re claiming.</li>
+        <li><strong>Conservation compliance (AD-1026)</strong> on file and accurate.</li>
+        <li><strong>Adjusted Gross Income (AGI)</strong> limits met (CCC-941 / CCC-942 if applicable).</li>
+        <li><strong>No delinquent federal debts</strong> (e.g., back taxes, defaulted student loans, <strong>USDA (United States Department of Agriculture)</strong>/SBA) or <strong>child-support arrears</strong> that can trigger Treasury offsets.</li>
+        <li><strong>Deadlines matter:</strong> apply during the signup window (or rolling signup, if allowed).</li>
+        <li><strong>Don’t start work before approval/inspection</strong> on cost-share programs.</li>
+        <li><strong>Keep receipts & documentation</strong> (invoices, labor logs, seed tags). <strong>Before & after photos</strong> are often required.</li>
+      </ul>
+      <p class="notice meta">This guide is independent and not affiliated with USDA. Always confirm details with your local FSA/NRCS office.</p>
+
+      <h2>Search & Filter Programs</h2>
+      <div class="controls">
+        <input id="q" type="search" placeholder="Search by program, agency, or what it covers…">
+        <div>
+          <div class="label">Producer type</div>
+          <div id="producerWrap" class="badges"></div>
+        </div>
+        <div>
+          <div class="label">Purpose / use</div>
+          <div id="catWrap" class="badges"></div>
+        </div>
+        <div>
+          <div class="label">Quick filters</div>
+          <div class="quick">
+            <label><input type="checkbox" id="rollingOnly"> Rolling only</label>
+            <label><input type="checkbox" id="noMatchOnly"> No match required</label>
+            <label><input type="checkbox" id="openNow"> Open now</label>
+            <label><input type="checkbox" id="due30"> Due ≤ 30 days</label>
+          </div>
+          <div class="label" style="margin-top:6px">Payout type</div>
+          <div class="quick">
+            <label><input type="radio" name="payout" value="" checked> Any</label>
+            <label><input type="radio" name="payout" value="reimbursement"> Reimbursement</label>
+            <label><input type="radio" name="payout" value="direct"> Direct payment</label>
+          </div>
+        </div>
+      </div>
+
+      <div id="count" class="count"></div>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>How the process usually works</h2>
+    <ol class="notice-list">
+      <li><strong>Apply for the grant before you start work.</strong> Starting early = ineligible.</li>
+      <li><strong>Inspection & approval.</strong> Staff verify your loss or proposed practice.</li>
+      <li><strong>Do the work & document it.</strong> Save receipts, invoices, seed tags, labor logs, and take <strong>before & after photos</strong>.</li>
+      <li><strong>Submit for reimbursement.</strong> Provide documentation; staff may re-inspect.</li>
+      <li><strong>Payment/reimbursement.</strong> Typically 30–120 days after paperwork is accepted; some practices can take 6–12 months.</li>
+    </ol>
+
+    <h2>Covering upfront costs (bridge funding)</h2>
+    <p class="meta">
+      Most cost-share/rehab programs are <em>reimbursement</em> — you pay first, then get paid back. Many producers use short-term operating credit or USDA loans until reimbursement. ⚠️ You may need to <strong>make loan payments before reimbursement arrives</strong>.
+    </p>
+
+    <h2>Loan timelines & sizes (typical)</h2>
+    <ul class="notice-list">
+      <li><strong>Microloans</strong>: up to $50,000 • ~30–60 days to process when complete • good for small fencing/water/seed jobs.</li>
+      <li><strong>Direct Operating Loans</strong>: up to $400,000 • ~30–60 days when complete • fit for wells, ponds, larger EQIP items.</li>
+      <li><strong>Guaranteed Loans</strong>: lender-based; cap ≈ $2M+ • timeline depends on lender.</li>
+    </ul>
+
+    <h2>AGI Limit Example (How the $900,000 Rule Works)</h2>
+    <div class="notice">
+      <p>
+        USDA (United States Department of Agriculture) programs have a general income cap: if your average income over 3 years is above <strong>$900,000</strong>, you may not qualify. There’s an exception if most of your income comes from farming, ranching, or forestry.
+      </p>
+      <p><strong>Example:</strong> A rancher earns $1.2 million over 3 years. $950,000 is from cattle sales and $250,000 is from non-farm investments. Since over 75% of their income is from ranching, they can still qualify by filing form <strong>CCC-942</strong> at their FSA (Farm Service Agency) office. If most of their income had been non-farm, they would not be eligible.</p>
+      <p>👉 <a href="https://www.fsa.usda.gov/sites/default/files/2020-12/payment-eligibility-payment-limitation.pdf" target="_blank" rel="noopener">See official USDA AGI rules (Payment Eligibility PDF)</a></p>
+    </div>
+
+    <p class="meta">
+      ✅ <strong>Best sequence:</strong> Apply for the grant first. Once approved, line up a loan if needed.  
+      ⚠️ <strong>If grant but no loan:</strong> you may not be able to finish → no reimbursement.  
+      ⚠️ <strong>If loan but no grant:</strong> you cover 100% of costs yourself.  
+      ⏳ <strong>If you can’t complete the work:</strong> approval usually expires, no harm/no foul — unless you took an <em>advance</em>, which must be repaid.
+    </p>
+
+    <p class="meta">
+      🔗 Learn more about USDA loan options:  
+      <a href="https://www.farmers.gov/loans" target="_blank" rel="noopener">Farmers.gov – Farm Loans</a> ·
+      <a href="https://www.fsa.usda.gov/resources/farm-loan-programs/farm-operating-loans" target="_blank" rel="noopener">FSA Operating Loans</a> ·
+      <a href="https://www.fsa.usda.gov/resources/farm-loan-programs/microloans" target="_blank" rel="noopener">FSA Microloans</a> ·
+      <a href="https://www.fsa.usda.gov/resources/programs/guaranteed-farm-loans" target="_blank" rel="noopener">FSA Guaranteed Loans</a>
+    </p>
+
+    <h2>Available Programs</h2>
+    <div id="list"></div>
+
+    <section class="faq">
+      <h2>Common Questions Farmers Ask</h2>
+      <div class="qa">
+        <h3>Can I get help if I lost hay or forage?</h3>
+        <p>Yes. The Livestock Forage Disaster Program (LFP) can cover feed and grazing losses from drought or fire.</p>
+
+        <h3>What if one of my cows died?</h3>
+        <p>The Livestock Indemnity Program (LIP) provides direct payments if livestock are lost due to disaster, disease, or extreme weather.</p>
+
+        <h3>Can I get a USDA grant for fencing?</h3>
+        <p>Yes. Programs like ECP and EQIP often cover fencing repair, replacement, or cross-fencing. These are reimbursements — apply first, then get paid back after work is done.</p>
+
+        <h3>Do I have to pay upfront?</h3>
+        <p>Most programs are reimbursements. Farmers often use USDA Microloans or Operating Loans to cover costs until payment comes through.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="sharebar">
+        <a id="globalShareBtnFooter" class="button outline small" href="#">Share this guide</a>
+        <a id="globalCopyBtnFooter"  class="button ghost small"  href="#">Copy link</a>
+      </div>
+
+      <p class="meta">
+        This is a free, independent guide and is <strong>not affiliated with USDA</strong>. For program specifics and forms, contact your local FSA/NRCS office.
+      </p>
+      <p class="meta">
+        Need help preparing an application? Many producers hire a grant writer to save time and avoid mistakes.  
+        👉 <a href="https://www.facebook.com/share/1K4soCxQzk/" class="cta-btn" target="_blank" rel="noopener">Ranch and Farm Grants on Facebook</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="assets/app.js"></script>
+  <script>
+    (function(){
+      const el = document.getElementById('lastUpdated');
+      if (el) {
+        const d = new Date();
+        const mm = String(d.getMonth()+1).padStart(2,'0');
+        const dd = String(d.getDate()).padStart(2,'0');
+        el.textContent = `Last updated: ${d.getFullYear()}-${mm}-${dd}`;
+      }
+    })();
+  </script>
+
+  <!-- toast for copy link -->
+  <div id="toast" class="toast" role="status" aria-live="polite">Link copied</div>
+</body>
+</html>
